@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dela+Gothic+One&family=Poppins:ital,wght@0,700;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Conexão Mobile</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-code-alt bx-tada' ></i></i>Conexão Mobile</a>
+
+    <ul class="navegação">
+            <li><a href="#">Celulares</a></li>
+            <li><a href="#">Acessorios</a></li>
+            <li><a href="#">Seja vendedor</a></li>
+            </li>
+        <div class="header-icons">
+            <i class='bx bx-cart' ></i>
+            <div id="menu"><i class='bx bx-menu' ></i></div>
+        </div><!--header-icons-->
+
+     </ul><!--navegação-->            
+             <input type="text" name="q" placeholder="Pesquisar">
+             <input type="submit" value="Pesquisar">
+            </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="images/celulares.jpg" class="One">
+        </div><!--home-img-->
+
+        <div class="home-text">
+            <h1>Tudo que seu celular precisa</h1>
+            <h2>Troque de celular agora mesmo!</h2>
+            <h3>Preços abaixo do mercado</h3>
+            <a href="#" class="btn">Comprar</a>
+        </div><!--home--text-->
+
+    </section>
+    
+    <div class="main">
+        <div class="row">
+            <li><img src="images/iphone14-removebg-preview.png" onclick="slider('iphone14-removebg-preview')"></li>
+        </div>
+
+    <div class="row2">
+        <li><img src="images/galaxy2-removebg-preview.png" onclick="slider('galaxy2-removebg-preview')"></li>
+    </div>
+
+    <div class="row3">
+        <li><img src="images/xiomi-removebg-preview.png" onclick="slider('xiomi-removebg-preview')"></li>
+    </div>
+</div>
+
+<script>
+    function slider (anything){
+        document.querySelector ('.one') .src = anything;
+    };
+
+   let menu = document.querySelector ('#menu-icon');
+   let navbar = document.querySelector ('.navbar');
+
+   menu.onclick = () => {
+    menu.classList.toggle ('bx-x');
+    navbar.classList.toggle ('open');
+   }
+</script>
+
+</body>
+</html>
